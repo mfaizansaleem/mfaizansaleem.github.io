@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammad Faizan Saleem – Mobile App Developer (Android Native & Flutter)</title>
+<style>
+:root{--bg:#f7f8fa;--surface:#fff;--text:#14171f;--muted:#5b6475;--accent:#0f766e;--accent2:#e8f5f3;--border:#e1e5ec;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1116;--surface:#171b23;--text:#eceff4;--muted:#9aa4b5;--accent:#2dd4bf;--accent2:#12302d;--border:#262c38;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1116;--surface:#171b23;--text:#eceff4;--muted:#9aa4b5;--accent:#2dd4bf;--accent2:#12302d;--border:#262c38;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--border);z-index:5}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{font-size:17px}nav .links{display:flex;gap:18px;font-size:14px;overflow-x:auto}
+nav .links a{color:var(--muted);white-space:nowrap}
+.hero{padding:72px 0 48px}
+.hero small{color:var(--accent);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
+.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.15;margin:10px 0 16px}
+.hero p{max-width:640px;color:var(--muted);font-size:18px;margin:0 0 26px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;margin:0 10px 10px 0;border:1px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--bg)}
+section{padding:44px 0;border-top:1px solid var(--border)}
+h2{font-size:26px;margin:0 0 22px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{background:var(--accent2);color:var(--accent);border-radius:20px;padding:3px 11px;font-size:12.5px;font-weight:600}
+.job{display:grid;gap:4px;padding:18px 0;border-bottom:1px solid var(--border)}
+.job:last-child{border:0}.job h3{margin:0;font-size:18px}.job .meta{color:var(--muted);font-size:14px}
+.job ul{margin:6px 0 0;padding-left:20px;color:var(--muted);font-size:15px}
+.skills{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.skills h3{font-size:15px;margin:0 0 10px}
+.links2 a{margin-right:18px}
+footer{padding:36px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Muhammad Faizan Saleem</b>
+<div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<small>Mobile App Developer</small>
+<h1>I build scalable Android &amp; Flutter apps people enjoy using.</h1>
+<p>3+ years of experience shipping native Android (Kotlin, Jetpack Compose) and cross-platform Flutter apps with Clean Architecture, solid performance and thoughtful UI/UX.</p>
+<a class="btn p" href="#projects">View my work</a><a class="btn" href="mailto:mfaizansaleem47@gmail.com">Get in touch</a><a class="btn" href="https://github.com/mfaizansaleem" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/muhammadfaizansaleem/" target="_blank" rel="noopener">LinkedIn</a>
+</div></header>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p>I’m a mobile app developer specializing in native Android with MVVM, Jetpack Compose and Android Jetpack, and in Flutter with BLoC and Provider. I’ve integrated REST APIs, WebSockets, payment gateways, local persistence, Firebase and Google Maps into production apps, and I care about secure, maintainable code: JWT, SSL certificate pinning, biometric authentication and CI with GitHub Actions. I’m also growing my native iOS skills with Swift and SwiftUI, and I use AI tools like Claude and Cursor to move faster.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>Union Developers – Property Management</h3><p>Flutter app for property management with installment collection through the Alfalah payment gateway, biometric login and push notifications. Handled iOS signing, APNs/FCM setup and TestFlight delivery.</p>
+<div class="tags"><span class="tag">Flutter</span><span class="tag">Alfalah</span><span class="tag">Biometrics</span><span class="tag">FCM / APNs</span></div></div>
+
+<div class="card"><h3>Restaurant Management System</h3><p>Three connected apps (waiter, customer, rider), foodpanda-style, converted to white-label for multiple restaurants. Real-time orders and chat over a shared socket, branch-scoped rider events and a map-based rider workflow.</p>
+<div class="tags"><span class="tag">Flutter</span><span class="tag">WebSockets</span><span class="tag">Google Maps</span><span class="tag">White-label</span></div></div>
+
+<div class="card"><h3>Walk Pay</h3><p>Fitness app published on Google Play.</p>
+<div class="tags"><span class="tag">Android</span></div><p style="margin:12px 0 0"><a href="https://play.google.com/store/apps/details?id=com.systodevs.fitness.walkpays">View on Google Play →</a></p></div>
+
+<div class="card"><h3>Rainbow Live</h3><p>Live social app published on Google Play.</p>
+<div class="tags"><span class="tag">Android</span></div><p style="margin:12px 0 0"><a href="https://play.google.com/store/apps/details?id=com.app.rainbow.live.android">View on Google Play →</a></p></div>
+
+<div class="card"><h3>QRio</h3><p>QR code generator app published on Google Play.</p>
+<div class="tags"><span class="tag">Android</span></div><p style="margin:12px 0 0"><a href="https://play.google.com/store/apps/details?id=com.horizam.qrcodegenerator">View on Google Play →</a></p></div>
+
+<div class="card"><h3>Fly with Tailwinds</h3><p>Flutter app live on the Apple App Store.</p>
+<div class="tags"><span class="tag">Flutter</span><span class="tag">iOS</span></div><p style="margin:12px 0 0"><a href="https://apps.apple.com/us/app/fly-with-tailwinds/id6450366921">View on App Store →</a></p></div>
+
+<div class="card"><h3>Expense Tracker</h3><p>Personal monthly expense tracker with categories, filters and month-by-month history. Built in Flutter, with a SwiftUI + SwiftData version as my first native iOS project.</p>
+<div class="tags"><span class="tag">Flutter</span><span class="tag">SwiftUI</span><span class="tag">SwiftData</span></div></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<div class="job"><h3>Nextbridge Ltd.</h3><div class="meta">Software Engineer · Flutter · Sep 2025 – Present</div>
+<ul><li>Build and maintain Flutter apps with clean, scalable architecture.</li><li>Work on native iOS (Swift) and platform integrations via method channels.</li></ul></div>
+<div class="job"><h3>EmergTech Solutions</h3><div class="meta">Flutter &amp; Android Native Developer</div>
+<ul><li>Used Firebase Realtime Database, Remote Config and Storage in production apps.</li><li>Implemented SSL certificate pinning for secure API communication.</li></ul></div>
+<div class="job"><h3>Devfinix</h3><div class="meta">Flutter &amp; Android Native Developer</div>
+<ul><li>Developed and published Android and Flutter apps with REST API integration and local persistence.</li></ul></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div class="card"><h3>Languages</h3><div class="tags"><span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Dart</span><span class="tag">Swift</span></div></div>
+<div class="card"><h3>Android</h3><div class="tags"><span class="tag">Jetpack Compose</span><span class="tag">MVVM</span><span class="tag">Android Jetpack</span><span class="tag">Clean Architecture</span></div></div>
+<div class="card"><h3>Flutter</h3><div class="tags"><span class="tag">BLoC</span><span class="tag">Provider</span><span class="tag">Method Channels</span><span class="tag">Flutter DevTools</span></div></div>
+<div class="card"><h3>Backend &amp; Integrations</h3><div class="tags"><span class="tag">REST APIs</span><span class="tag">WebSockets</span><span class="tag">Stripe</span><span class="tag">Alfalah</span><span class="tag">Google Maps</span></div></div>
+<div class="card"><h3>Firebase</h3><div class="tags"><span class="tag">Crashlytics</span><span class="tag">Analytics</span><span class="tag">Realtime DB</span><span class="tag">Remote Config</span><span class="tag">FCM</span></div></div>
+<div class="card"><h3>Security &amp; Tooling</h3><div class="tags"><span class="tag">JWT</span><span class="tag">SSL Pinning</span><span class="tag">Biometric Auth</span><span class="tag">GitHub Actions</span><span class="tag">Claude</span><span class="tag">Cursor</span></div></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let’s work together</h2>
+<p>I’m open to Android and Flutter opportunities. The best way to reach me is by email.</p>
+<a class="btn p" href="mailto:mfaizansaleem47@gmail.com">mfaizansaleem47@gmail.com</a><a class="btn" href="https://github.com/mfaizansaleem" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/muhammadfaizansaleem/" target="_blank" rel="noopener">LinkedIn</a>
+</div></section>
+
+<footer><div class="wrap">© 2026 Muhammad Faizan Saleem · Mobile App Developer (Android Native &amp; Flutter)</div></footer>
+</body>
+</html>
